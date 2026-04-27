@@ -21,7 +21,7 @@ const Index = () => {
     const ld = {
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Colline Swai",
+      name: "Colline Antelimy Sway",
       jobTitle: "Data Analyst & Planning Officer",
       worksFor: { "@type": "Organization", name: "Wilmar Tanzania Limited" },
       alumniOf: { "@type": "CollegeOrUniversity", name: "Eastern Africa Statistical Training Centre (EASTC)" },

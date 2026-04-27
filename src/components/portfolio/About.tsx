@@ -10,7 +10,7 @@ export const About = () => {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass-card group">
               <img
                 src={portrait}
-                alt="Colline Swai, Data and Systems Analyst"
+                alt="Colline Antelimy Sway, Data and Systems Analyst"
                 width={896}
                 height={1152}
                 loading="lazy"

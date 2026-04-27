@@ -38,7 +38,7 @@ export const Navbar = () => {
             <div className="h-8 w-8 rounded-lg bg-gradient-primary grid place-items-center shadow-glow group-hover:scale-110 transition-transform">
               <span className="text-primary-foreground font-bold text-sm">C</span>
             </div>
-            <span className="font-semibold tracking-tight">Colline Swai</span>
+            <span className="font-semibold tracking-tight">Colline Antelimy Sway</span>
           </a>
 
           <div className="hidden md:flex items-center gap-1">

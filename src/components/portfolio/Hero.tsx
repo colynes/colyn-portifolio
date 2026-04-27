@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Sparkles, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -44,7 +44,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-balance animate-fade-in-up animation-delay-200">
-            I'm <span className="text-foreground font-medium">Colline Swai</span> — a Data Analyst &amp; Planning Officer
+            I'm <span className="text-foreground font-medium">Colline Antelimy Sway</span> — a Data Analyst &amp; Planning Officer
             at Wilmar Tanzania. I help businesses organize data, automate workflows, and build practical
             systems using Excel, Power BI, PHP, MySQL, and modern web technologies.
           </p>
@@ -78,11 +78,28 @@ export const Hero = () => {
             {[
               { value: "5+", label: "Systems built" },
               { value: "3", label: "Years experience" },
-              { value: "10+", label: "Dashboards" },
               { value: "100%", label: "Client focus" },
+              {
+                icon: (
+                  <a
+                    href="https://github.com/colynes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View GitHub"
+                    className="inline-flex items-center justify-center h-10 w-10 rounded-md text-muted-foreground"
+                  >
+                    <Github size={22} />
+                  </a>
+                ),
+                label: "GitHub",
+              },
             ].map((stat) => (
-              <div key={stat.label} className="glass-card rounded-2xl p-5 hover:border-primary/30 transition-colors">
-                <div className="text-3xl font-bold gradient-text">{stat.value}</div>
+              <div key={stat.label} className="glass-card rounded-2xl p-5 hover:border-primary/30 transition-colors flex flex-col items-center">
+                {stat.icon ? (
+                  <div className="mb-2">{stat.icon}</div>
+                ) : (
+                  <div className="text-3xl font-bold gradient-text">{stat.value}</div>
+                )}
                 <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}

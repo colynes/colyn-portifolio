@@ -10,7 +10,7 @@ export const Footer = () => {
               <div className="h-8 w-8 rounded-lg bg-gradient-primary grid place-items-center shadow-glow">
                 <span className="text-primary-foreground font-bold text-sm">C</span>
               </div>
-              <span className="font-semibold">Colline Swai</span>
+              <span className="font-semibold">Colline Antelimy Sway</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Data &amp; Systems Analyst building practical, data-driven systems for modern businesses.
@@ -39,6 +39,7 @@ export const Footer = () => {
                 { icon: Mail, href: "mailto:collinsantelimy@gmail.com", label: "Email" },
                 { icon: MessageCircle, href: "https://wa.me/255718744415", label: "WhatsApp" },
                 { icon: Linkedin, href: "https://www.linkedin.com/", label: "LinkedIn" },
+                { icon: Github, href: "https://github.com/colynes", label: "GitHub" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
@@ -51,26 +52,13 @@ export const Footer = () => {
                   <Icon size={16} />
                 </a>
               ))}
-              
-              <div className="ml-2 flex items-center">
-                <a
-                  href="https://github.com/colynes"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-gray-800 to-black text-white text-sm hover:opacity-95 shadow-sm transition-all"
-                  aria-label="View GitHub"
-                >
-                  <Github size={16} />
-                  View GitHub
-                </a>
-              </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            ┬⌐ {new Date().getFullYear()} Colline Swai. Crafted with care in Tanzania.
+            © {new Date().getFullYear()} Colline Antelimy Sway. Crafted with care in Tanzania.
           </p>
           <a
             href="#home"
