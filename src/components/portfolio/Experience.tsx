@@ -54,43 +54,60 @@ export const Experience = () => {
           <div className="absolute left-5 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-border to-transparent" />
 
           <div className="space-y-12">
-            {experiences.map((exp, i) => (
-              <div
-                key={exp.company}
-                className={`relative grid md:grid-cols-2 gap-8 items-start ${
-                  i % 2 === 0 ? "" : "md:[&>*:first-child]:order-2"
-                }`}
-              >
-                {/* Dot */}
-                <div className="absolute left-5 md:left-1/2 -translate-x-1/2 top-6 z-10">
-                  <div className="h-3 w-3 rounded-full bg-primary shadow-glow ring-4 ring-background" />
-                </div>
+            {experiences.map((exp, i) => {
+              const isLeft = i % 2 === 0; // role on left, card on right
+              return (
+                <div
+                  key={exp.company}
+                  className="relative grid md:grid-cols-2 gap-8 items-start"
+                >
+                  {/* Dot */}
+                  <div className="absolute left-5 md:left-1/2 -translate-x-1/2 top-6 z-10">
+                    <div className="h-3 w-3 rounded-full bg-primary shadow-glow ring-4 ring-background" />
+                  </div>
 
-                <div className={`pl-14 md:pl-0 ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
-                  <div className="text-xs font-mono uppercase tracking-wider text-primary mb-2">
-                    {exp.period}
+                  {/* Role / company */}
+                  <div
+                    className={`pl-14 md:pl-0 ${
+                      isLeft
+                        ? "md:order-1 md:text-right md:pr-12"
+                        : "md:order-2 md:text-left md:pl-12"
+                    }`}
+                  >
+                    <div className="text-xs font-mono uppercase tracking-wider text-primary mb-2">
+                      {exp.period}
+                    </div>
+                    <h3 className="text-xl font-semibold">{exp.role}</h3>
+                    <div
+                      className={`flex items-center gap-2 text-muted-foreground mt-1 ${
+                        isLeft ? "md:justify-end" : "md:justify-start"
+                      }`}
+                    >
+                      <Building2 size={14} />
+                      <span className="text-sm">{exp.company}</span>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold">{exp.role}</h3>
-                  <div className={`flex items-center gap-2 text-muted-foreground mt-1 ${i % 2 === 0 ? "md:justify-end" : ""}`}>
-                    <Building2 size={14} />
-                    <span className="text-sm">{exp.company}</span>
-                  </div>
-                </div>
 
-                <div className={`pl-14 md:pl-0 ${i % 2 === 0 ? "md:pl-12" : "md:pr-12"}`}>
-                  <div className="glass-card rounded-2xl p-5 hover:border-primary/30 transition-colors">
-                    <ul className="space-y-2.5">
-                      {exp.points.map((point) => (
-                        <li key={point} className="text-sm text-muted-foreground flex gap-2 leading-relaxed">
-                          <span className="text-primary mt-1.5 shrink-0">▸</span>
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Responsibilities card */}
+                  <div
+                    className={`pl-14 md:pl-0 ${
+                      isLeft ? "md:order-2 md:pl-12" : "md:order-1 md:pr-12"
+                    }`}
+                  >
+                    <div className="glass-card rounded-2xl p-5 hover:border-primary/30 transition-colors">
+                      <ul className="space-y-2.5">
+                        {exp.points.map((point) => (
+                          <li key={point} className="text-sm text-muted-foreground flex gap-2 leading-relaxed">
+                            <span className="text-primary mt-1.5 shrink-0">▸</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
