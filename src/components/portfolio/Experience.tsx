@@ -2,34 +2,37 @@ import { Building2 } from "lucide-react";
 
 const experiences = [
   {
+    role: "Planning & Data Analysis Officer",
+    company: "Wilmar Tanzania Limited",
+    period: "Feb 2026 – Present",
+    points: [
+      "Support planning and coordination of production for cooking oil, rice, and pasta",
+      "Maintain accurate production, inventory, and operational records for decision-making",
+      "Build Excel-based tracking systems to monitor output, stock levels, and performance",
+      "Analyze production and inventory data to identify inefficiencies and recommend improvements",
+      "Support data-driven planning to minimize waste and optimize raw material usage",
+    ],
+  },
+  {
     role: "Record Keeper",
-    company: "Transocean Tanzania Ltd",
-    period: "Recent",
+    company: "Transocean Tanzania Limited",
+    period: "Sep 2025 – Present",
     points: [
-      "Managed invoices and business records across logistics operations",
-      "Performed data reconciliation and produced regular reports",
-      "Tracked exbond fees, agency fees, and revenue records",
+      "Maintained physical and digital records of shipments, clients, and transactions",
+      "Generated invoices and monitored payments for accurate financial records",
+      "Produced reports on cargo movements, payments, and agency activities",
+      "Cross-checked and verified data to resolve discrepancies and ensure integrity",
     ],
   },
   {
-    role: "IT Technician",
-    company: "Paulsam Geo Engineering",
-    period: "Prior",
-    points: [
-      "Provided system maintenance and troubleshooting",
-      "Built and supported PHP/MySQL business systems",
-      "Supported data analysis and visualization using Excel and Power BI",
-      "Assisted users with technical support and training",
-    ],
-  },
-  {
-    role: "ICT Internship",
+    role: "IT Department Intern",
     company: "KCB Bank",
-    period: "Earlier",
+    period: "Jul – Oct 2024",
     points: [
-      "Supported hardware and software troubleshooting",
-      "Assisted with BitLocker encryption setup",
-      "Supported network and security-related tasks",
+      "Backed up critical data and configured external storage to prevent data loss",
+      "Installed and configured hardware: computers, printers, and servers",
+      "Performed network troubleshooting and system diagnostics",
+      "Implemented BitLocker encryption and managed recovery keys across devices",
     ],
   },
 ];

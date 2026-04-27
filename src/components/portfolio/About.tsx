@@ -25,8 +25,8 @@ export const About = () => {
               </div>
             </div>
             <div className="absolute -top-4 -right-4 glass-card rounded-2xl px-4 py-3 shadow-lg animate-float hidden md:block">
-              <div className="text-xs text-muted-foreground">Currently</div>
-              <div className="text-sm font-semibold">Pursuing Data Science</div>
+              <div className="text-xs text-muted-foreground">Currently at</div>
+              <div className="text-sm font-semibold">Wilmar Tanzania</div>
             </div>
           </div>
 
@@ -37,23 +37,24 @@ export const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With a Diploma in Statistics and an ongoing journey in Data Science, I sit at the
-                intersection of analytics and engineering — turning messy spreadsheets into clean
+                With a Bachelor of Data Science from the Eastern Africa Statistical Training Centre (EASTC),
+                I sit at the intersection of analytics and engineering — turning messy spreadsheets into clean
                 dashboards, and manual workflows into reliable systems.
               </p>
               <p>
-                Across roles in record-keeping, IT support, and system development, I've learned
-                that the best technical solutions are the ones that genuinely improve how a
+                Currently working as a Planning &amp; Data Analysis Officer at Wilmar Tanzania, supporting
+                production planning for essential food products. Across roles in data analysis, record-keeping,
+                and IT, I've learned the best technical solutions are the ones that genuinely improve how a
                 business runs day-to-day.
               </p>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-3 mt-8">
               {[
-                { icon: GraduationCap, label: "Education", value: "Diploma in Statistics" },
-                { icon: BookOpen, label: "Studying", value: "Data Science" },
-                { icon: Briefcase, label: "Focus", value: "Data & Systems" },
-                { icon: MapPin, label: "Location", value: "Tanzania" },
+                { icon: GraduationCap, label: "Education", value: "BSc Data Science" },
+                { icon: BookOpen, label: "From", value: "EASTC, Dar es Salaam" },
+                { icon: Briefcase, label: "Currently", value: "Wilmar Tanzania" },
+                { icon: MapPin, label: "Location", value: "Dar es Salaam" },
               ].map(({ icon: Icon, label, value }) => (
                 <div
                   key={label}

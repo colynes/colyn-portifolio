@@ -36,8 +36,8 @@ export const Footer = () => {
             <div className="text-xs uppercase tracking-widest text-primary mb-4 font-mono">Connect</div>
             <div className="flex gap-2">
               {[
-                { icon: Mail, href: "mailto:colline.swai@example.com", label: "Email" },
-                { icon: MessageCircle, href: "https://wa.me/255700000000", label: "WhatsApp" },
+                { icon: Mail, href: "mailto:collinsantelimy@gmail.com", label: "Email" },
+                { icon: MessageCircle, href: "https://wa.me/255718744415", label: "WhatsApp" },
                 { icon: Linkedin, href: "https://www.linkedin.com/", label: "LinkedIn" },
               ].map(({ icon: Icon, href, label }) => (
                 <a

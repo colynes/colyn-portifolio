@@ -13,8 +13,8 @@ const contactSchema = z.object({
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(1000),
 });
 
-const EMAIL = "colline.swai@example.com";
-const WHATSAPP = "255700000000";
+const EMAIL = "collinsantelimy@gmail.com";
+const WHATSAPP = "255718744415";
 const LINKEDIN = "https://www.linkedin.com/";
 
 export const Contact = () => {

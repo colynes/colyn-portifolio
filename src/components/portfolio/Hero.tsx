@@ -44,9 +44,9 @@ export const Hero = () => {
           </h1>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed text-balance animate-fade-in-up animation-delay-200">
-            I'm <span className="text-foreground font-medium">Colline Swai</span> — a Data &amp; Systems Analyst based in Tanzania.
-            I help businesses organize data, automate workflows, and build practical systems
-            using Excel, Power BI, PHP, MySQL, and modern web technologies.
+            I'm <span className="text-foreground font-medium">Colline Swai</span> — a Data Analyst &amp; Planning Officer
+            at Wilmar Tanzania. I help businesses organize data, automate workflows, and build practical
+            systems using Excel, Power BI, PHP, MySQL, and modern web technologies.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 animate-fade-in-up animation-delay-300">
