@@ -24,9 +24,13 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "Person",
       name: "Colline Swai",
-      jobTitle: "Data & Systems Analyst",
-      address: { "@type": "PostalAddress", addressCountry: "Tanzania" },
-      knowsAbout: ["Data Analysis", "Power BI", "PHP", "MySQL", "System Development", "IT Support"],
+      jobTitle: "Data Analyst & Planning Officer",
+      worksFor: { "@type": "Organization", name: "Wilmar Tanzania Limited" },
+      alumniOf: { "@type": "CollegeOrUniversity", name: "Eastern Africa Statistical Training Centre (EASTC)" },
+      email: "collinsantelimy@gmail.com",
+      telephone: "+255718744415",
+      address: { "@type": "PostalAddress", addressLocality: "Dar es Salaam", addressCountry: "Tanzania" },
+      knowsAbout: ["Data Analysis", "Power BI", "Python", "PHP", "MySQL", "Planning", "Reporting"],
     };
     let script = document.getElementById("ld-json") as HTMLScriptElement | null;
     if (!script) {
