@@ -5,9 +5,9 @@ export const About = () => {
   return (
     <section id="about" className="py-24 md:py-32 relative">
       <div className="section-container">
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-stretch">
           <div className="lg:col-span-2 relative">
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass-card group">
+            <div className="relative h-full min-h-[520px] rounded-3xl overflow-hidden glass-card group">
               <img
                 src={portrait}
                 alt="Colline Antelimy Sway, Data and Systems Analyst"
@@ -69,6 +69,24 @@ export const About = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-6">
+              <div className="text-xs uppercase tracking-widest text-primary mb-4 font-mono">/ Community Activities</div>
+              <div className="glass-card rounded-2xl p-4">
+                <div className="text-sm font-semibold">Participated in:</div>
+                <ul className="mt-3 list-disc list-inside text-sm text-muted-foreground space-y-2">
+                  <li>
+                    World Tourism Commemoration Day 2022 organized by Dreams Defender — fostering awareness
+                    on the importance of tourism and its social, cultural, political and economic value in
+                    Tanzania and across the world.
+                  </li>
+                  <li>
+                    World Tourism Commemoration Day 2023 — participated under the theme “Tourism and green
+                    Investment”.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

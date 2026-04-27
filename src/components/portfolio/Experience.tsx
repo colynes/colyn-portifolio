@@ -110,6 +110,17 @@ export const Experience = () => {
             })}
           </div>
         </div>
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="text-xs uppercase tracking-widest text-primary mb-4 font-mono">/ Certification</div>
+          <div className="glass-card rounded-2xl p-5">
+            <div className="text-sm font-semibold">May 2025 — British Airways Data Science Job Simulation (Forage)</div>
+            <ul className="mt-3 space-y-2 text-sm text-muted-foreground list-disc list-inside">
+              <li>Completed a simulation focusing on how data science is a critical component of British Airways' success.</li>
+              <li>Scraped and analysed customer review data to uncover findings.</li>
+              <li>Built a predictive model to understand factors that influence buying behaviour.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
