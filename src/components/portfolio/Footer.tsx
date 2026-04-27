@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Linkedin, ArrowUp } from "lucide-react";
+﻿import { Mail, MessageCircle, Linkedin, ArrowUp, Github } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -51,13 +51,26 @@ export const Footer = () => {
                   <Icon size={16} />
                 </a>
               ))}
+              
+              <div className="ml-2 flex items-center">
+                <a
+                  href="https://github.com/colynes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-gray-800 to-black text-white text-sm hover:opacity-95 shadow-sm transition-all"
+                  aria-label="View GitHub"
+                >
+                  <Github size={16} />
+                  View GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Colline Swai. Crafted with care in Tanzania.
+            ┬⌐ {new Date().getFullYear()} Colline Swai. Crafted with care in Tanzania.
           </p>
           <a
             href="#home"

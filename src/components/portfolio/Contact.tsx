@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { z } from "zod";
 import { Mail, MessageCircle, Linkedin, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,7 +34,7 @@ export const Contact = () => {
     }
     setSubmitting(true);
     const subject = encodeURIComponent(`Portfolio inquiry from ${result.data.name}`);
-    const body = encodeURIComponent(`${result.data.message}\n\n— ${result.data.name} (${result.data.email})`);
+    const body = encodeURIComponent(`${result.data.message}\n\nΓÇö ${result.data.name} (${result.data.email})`);
     setTimeout(() => {
       window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
       toast({ title: "Opening your email client", description: "Thanks for reaching out!" });

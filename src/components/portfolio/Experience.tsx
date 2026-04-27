@@ -8,7 +8,7 @@ const experiences = [
     points: [
       "Support planning and coordination of production for cooking oil, rice, and pasta",
       "Maintain accurate production, inventory, and operational records for decision-making",
-      "Build Excel-based tracking systems to monitor output, stock levels, and performance",
+      "Build Excel-based sheet reports to monitor output, stock levels, and performance",
       "Analyze production and inventory data to identify inefficiencies and recommend improvements",
       "Support data-driven planning to minimize waste and optimize raw material usage",
     ],

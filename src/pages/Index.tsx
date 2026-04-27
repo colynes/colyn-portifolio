@@ -11,11 +11,9 @@ import { Footer } from "@/components/portfolio/Footer";
 
 const Index = () => {
   useEffect(() => {
-    // Default to dark mode on first visit
+    // Default to light mode on first visit
     const stored = localStorage.getItem("theme");
-    if (!stored) {
-      document.documentElement.classList.add("dark");
-    } else {
+    if (stored) {
       document.documentElement.classList.toggle("dark", stored === "dark");
     }
 
@@ -30,7 +28,7 @@ const Index = () => {
       email: "collinsantelimy@gmail.com",
       telephone: "+255718744415",
       address: { "@type": "PostalAddress", addressLocality: "Dar es Salaam", addressCountry: "Tanzania" },
-      knowsAbout: ["Data Analysis", "Power BI", "Python", "PHP", "MySQL", "Planning", "Reporting"],
+      knowsAbout: ["Data Analysis", "Microsoft Office", "Python", "PHP", "MySQL", "Planning", "Reporting"],
     };
     let script = document.getElementById("ld-json") as HTMLScriptElement | null;
     if (!script) {

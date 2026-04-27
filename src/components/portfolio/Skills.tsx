@@ -5,13 +5,13 @@ const groups = [
     icon: BarChart3,
     title: "Data",
     description: "Turning raw numbers into clear, actionable insights.",
-    skills: ["Excel", "Power BI", "Data Cleaning", "Data Analysis", "Reporting"],
+    skills: ["Excel", "Python", "Data Cleaning", "Data Analysis", "Reporting"],
   },
   {
     icon: Code2,
     title: "Development",
     description: "Building practical systems that solve real business problems.",
-    skills: ["PHP", "MySQL", "Laravel basics", "React basics", "Tailwind CSS"],
+    skills: ["PHP", "MySQL", "Laravel", "React", "Tailwind CSS","Node.js"],
   },
   {
     icon: HeadphonesIcon,
